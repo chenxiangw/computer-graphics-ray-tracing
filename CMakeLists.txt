@@ -11,6 +11,7 @@ endif()
 option(USE_SOLUTION "Use solution"  OFF)
 # Add your project files
 include_directories("include/")
+include_directories("eigen/eigen-git-mirror")
 if(USE_SOLUTION)
   set(SRC_DIR "solution/")
 else()

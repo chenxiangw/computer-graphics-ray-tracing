@@ -19,10 +19,11 @@
 //   t  _parametric_ distance along ray so that ray.origin+t*ray.direction is
 //     the hit location
 //   n  surface normal at hit location
-// Returns true iff a hit was found
+// Returns true if a hit was found
 bool first_hit(
   const Ray & ray, 
   const double min_t,
+  const double max_t,
   const std::vector< std::shared_ptr<Object> > & objects,
   int & hit_id, 
   double & t,
